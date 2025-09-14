@@ -29,9 +29,12 @@ export default function RootLayout({
         className={cn(
           "h-dvh",
           // "flex flex-col",
-          "bg-background antialiased",
           geistSans.variable,
           geistMono.variable,
+          "border-red-500 border-1",
+          "bg-background",
+          // "bg-blue-50",
+          "antialiased"
         )}
       >
         {children}
