@@ -7,10 +7,16 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "prettier": "prettier -w ."
+    "prettier": "prettier -w .",
+    "prisma-init": "prisma init",
+    "prisma-studio": "prisma studio",
+    "prisma-gen": "prisma generate",
+    "prisma-push": "prisma db push",
+    "prisma-seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.2.1",
+    "@hookform/resolvers": "^5.2.2",
+    "@prisma/client": "^6.16.1",
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-alert-dialog": "^1.1.15",
     "@radix-ui/react-aspect-ratio": "^1.1.7",
@@ -60,13 +66,14 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^24",
+    "@types/node": "^24.4.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.6.2",
+    "prisma": "^6.16.1",
     "tailwindcss": "^4",
     "tw-animate-css": "^1.3.8",
     "typescript": "^5"
